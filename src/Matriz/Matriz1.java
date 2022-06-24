@@ -1,24 +1,24 @@
 package matriz;
 
-public class Matriz2 {
+public class Matriz1 {
 
     public static void main(String[] args) {
         System.out.println("FORMA 1");
         System.out.println("=======");
         {
-            //Declarar una matriz de cadenas de tamaño 3x2 (filas x columnas)
-            String[][] m = new String[3][2]; //3x2 = 6 elementos
+            //Declarar una matriz de enteros de tamaño 3x2 (filas x columnas)
+            int[][] m = new int[3][2]; //3x2 = 6 elementos
             //Llenar una matriz manualmente
-            m[0][0] = "Luis";
-            m[0][1] = "Miguel";
-            m[1][0] = "Carmen";
-            m[1][1] = "María";
-            m[2][0] = "Jose";
-            m[2][1] = "Arturo";
+            m[0][0] = 5;
+            m[0][1] = 6;
+            m[1][0] = 7;
+            m[1][1] = 8;
+            m[2][0] = 9;
+            m[2][1] = 10;
             //Recorrer una matriz para mostrarlo por pantalla
             for (int f = 0; f < m.length; f++) {
                 for (int c = 0; c < m[0].length; c++) {
-                    System.out.printf("(%d,%d)=%-10s", f, c, m[f][c]);
+                    System.out.print("(" + f + "," + c + ")=" + m[f][c]);
                 }
                 System.out.println();
             }
@@ -31,13 +31,11 @@ public class Matriz2 {
         System.out.println("=======");
         {
             //Declarar y llenar una matriz de enteros de tamaño 3x2 (filas x columnas)
-            String[][] m = {{"Luis", "Miguel"},
-            {"Carmen", "María"},
-            {"Jose", "Arturo"}};
+            int[][] m = {{5, 6}, {7, 8}, {9, 10}};
             //Recorrer una matriz para mostrarlo por pantalla
             for (int f = 0; f < m.length; f++) {
                 for (int c = 0; c < m[0].length; c++) {
-                    System.out.printf("(%d,%d)=%-10s", f, c, m[f][c]);
+                    System.out.print("(" + f + "," + c + ")=" + m[f][c]);
                 }
                 System.out.println();
             }
